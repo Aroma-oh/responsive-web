@@ -8,6 +8,14 @@ interface GridProps {
   children: ReactNode;
 }
 
+/**
+ * Props:
+ * - mt?: margin-top
+ * - mb?: margin-bottom
+ * - p?: padding left & right
+ * - children: component
+ */
+
 export const Grid = ({ mt, mb, p, children }: GridProps) => {
   return (
     <GridStyled mt={mt} mb={mb} p={p}>{children}</GridStyled>
