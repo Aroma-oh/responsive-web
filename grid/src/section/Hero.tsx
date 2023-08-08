@@ -7,8 +7,6 @@ interface CardProps {
 }
 
 export const Hero = () => {
-  const arr = ['a', 'b', 'x'];
-  console.log(arr.length)
   return (
     <Grid p={80}>
       <CarouselStyled />
