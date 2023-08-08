@@ -1,10 +1,6 @@
-import { styled } from 'styled-components';
 import { Grid } from '../component/Grid';
-
-interface CardProps {
-  start: number;
-  end: number;
-}
+import { CarouselStyled } from '../component/CarouselStyled';
+import { CardStyled } from '../component/CardStyled';
 
 export const Hero = () => {
   return (
@@ -16,14 +12,3 @@ export const Hero = () => {
     </Grid>)
 }
 
-const CarouselStyled = styled.div`
-  grid-column: 1 / 7;
-  min-height: 300px;
-  background-color: #D4E2D4;
-`
-
-const CardStyled = styled.div<CardProps>`
-  grid-column: ${(props) => `${props.start} / ${props.end}`};
-  min-height: 400px;
-  background-color: #D4E2D4;
-`
