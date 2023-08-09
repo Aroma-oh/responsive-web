@@ -7,14 +7,14 @@
 * 하지만 grid column 개수를 section과 element가 공유하는 방법,
 * break point에 따라 `grid-column`을 동적으로 바꾸는 좋은 방법을 찾지 못해 재사용성을 높이지는 못했습니다. 
 #### Grid section
-```
+```JavaScript
 const GridStyled = styled.section<GridProps>`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   ...
 ```
 #### Grid element 
-```
+```JavaScript
 export const CardStyled = styled.div<CardProps>`
   grid-column: ${(props) => `${props.start} / ${props.end}`};
   ...
@@ -29,7 +29,7 @@ export const CardStyled = styled.div<CardProps>`
 * `flex: 1 1 n%` 속성 값으로도 break point에 따른 대응을 할 수 있음을 배웠습니다.
 * 미디어 쿼리를 적용하기에는 Grid보다 Flex 속성을 적용하는 것이 더 깔끔하다고 느꼈습니다. 
 #### Flex section
-```
+```JavaScript
 const FlexStyled = styled.section<FlexProps>`
   display: flex;
   flex-direction: ${({ direction }) => direction ? `${direction}` : `row`};
@@ -38,7 +38,7 @@ const FlexStyled = styled.section<FlexProps>`
 ```
 #### Flex element
 
-```
+```JavaScript
 export const CardStyled = styled.div<CardProps>`
   flex: ${({ pb }) => pb ? `1 1 ${pb}%` : `30%`};
    ...
