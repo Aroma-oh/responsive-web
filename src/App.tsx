@@ -7,9 +7,9 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" Component={HomePage} />
-      <Route path="/grid" Component={GridPage} />
-      <Route path="/flex" Component={FlexPage} />
+      <Route path="/" element={<HomePage />} />
+      <Route path="/grid" element={<GridPage />} />
+      <Route path="/flex" element={<FlexPage />} />
     </Routes>
   )
 }
