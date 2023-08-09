@@ -1,6 +1,6 @@
-import { Grid } from '../component/Grid';
-import { CarouselStyled } from '../component/CarouselStyled';
-import { CardStyled } from '../component/CardStyled';
+import { Grid } from '../components/Grid';
+import { CarouselStyled } from '../components/CarouselStyled';
+import { CardStyled } from '../components/CardStyled';
 
 export const Hero = () => {
   return (

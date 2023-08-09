@@ -15,4 +15,8 @@ export const CardStyled = styled.div<CardProps>`
   grid-column: ${(props) => `${props.start} / ${props.end}`};
   min-height: 400px;
   background-color: #D4E2D4;
+
+  @media (max-width: 480px) {
+    grid-column: 1 / 7;
+  }
 `
