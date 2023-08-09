@@ -1,14 +1,16 @@
-import './App.css';
-import { Hero } from './section/Hero';
-import { Feature } from './section/Feature';
+import { Routes, Route } from 'react-router-dom';
+import { HomePage } from 'pages/HomePage';
+import { GridPage } from 'pages/GridPage';
+import { FlexPage } from 'pages/FlexPage';
 
 function App() {
 
   return (
-    <>
-      <Hero />
-      <Feature />
-    </>
+    <Routes>
+      <Route path="/" Component={HomePage} />
+      <Route path="/grid" Component={GridPage} />
+      <Route path="/flex" Component={FlexPage} />
+    </Routes>
   )
 }
 
