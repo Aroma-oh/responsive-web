@@ -1,5 +1,5 @@
-import { Grid } from '../components/Grid';
-import { CardStyled } from '../components/CardStyled';
+import { Grid } from 'components/grid/Grid'
+import { CardStyled } from 'components/grid/CardStyled';
 
 export const Feature = () => {
   return (
