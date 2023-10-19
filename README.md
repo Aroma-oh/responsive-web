@@ -50,3 +50,8 @@ export const CardStyled = styled.div<CardProps>`
   }
 `
 ```
+
+## 활용하기
+grid, flex 학습 내용을 활용하기 위해 반응형 랜딩페이지를 만들었습니다. </br>
+* Repository: https://github.com/Aroma-oh/tennis-coach
+* Web: https://tennis-coach.vercel.app/
